@@ -1,14 +1,46 @@
+* {
+  /* box-sizing: border-box; */
+  font-family: fantasy;
+  color: black !important;
+}
+
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+  /* margin: 0;
+  padding: 0; */
+  /* width: 100%;
+  height: 100%; */
 }
 
 body {
-  background-position: center center;
-  background-attachment: fixed;
+  background: antiquewhite;
+}
+
+#main-background {
+  width: 100%;
+  height: 70vh;
+  background-position: 50% 50%;
+  /* background-attachment: fixed; */
   background-repeat: repeat;
   background-size: cover;
 }
 
+nav {
+  position: fixed;
+  font-size: 1vw;
+  background: antiquewhite;
+  border-bottom: solid 25px black;
+  padding: 0 500px !important;
+}
+
+#intro-title {
+  padding-top: .5%;
+  border-top: solid 25px black;
+  font-size: 3vw;
+  text-decoration: underline;
+}
+#intro-content {
+  padding-top: .5%;
+  font-size: .8vw;
+  padding: 0 500px;
+  /* font-family: 'Playfair Display', serif; */
+}
