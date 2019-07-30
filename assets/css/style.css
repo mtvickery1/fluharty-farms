@@ -1,20 +1,54 @@
+/*======================================================================*/
+/* General */
+/*======================================================================*/
+/* html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+} */
+
 * {
   /* box-sizing: border-box; */
-  font-family: fantasy;
+  font-family: cursive;
   color: black !important;
-}
-
-html, body {
-  /* margin: 0;
-  padding: 0; */
-  /* width: 100%;
-  height: 100%; */
 }
 
 body {
   background: antiquewhite;
 }
 
+/* Borders */
+.bt {
+  border-top: solid 5px black;
+}
+
+/* Text */
+#intro-title {
+  padding-top: .5%;
+  font-size: 3vw;
+  text-decoration: underline;
+}
+#intro-content {
+  padding-top: .5%;
+  font-size: .8vw;
+  padding: 0 200px;
+}
+
+/*======================================================================*/
+/* Navbar */
+/*======================================================================*/
+nav {
+  position: fixed;
+  font-size: 1vw;
+  background: antiquewhite;
+  border-bottom: solid 5px black;
+  padding: 0 200px !important;
+}
+
+/*======================================================================*/
+/* Landing */
+/*======================================================================*/
 #main-background {
   width: 100%;
   height: 70vh;
@@ -24,23 +58,31 @@ body {
   background-size: cover;
 }
 
-nav {
-  position: fixed;
-  font-size: 1vw;
-  background: antiquewhite;
-  border-bottom: solid 25px black;
-  padding: 0 500px !important;
+/*======================================================================*/
+/* Gallery */
+/*======================================================================*/
+#photos {
+  padding: 20px 200px;
 }
 
-#intro-title {
-  padding-top: .5%;
-  border-top: solid 25px black;
-  font-size: 3vw;
-  text-decoration: underline;
+.row {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* border: solid 2px red; */
 }
-#intro-content {
-  padding-top: .5%;
-  font-size: .8vw;
-  padding: 0 500px;
-  /* font-family: 'Playfair Display', serif; */
+
+.col-md-4 {
+  /* border: solid 2px purple; */
+}
+
+.frame {
+  border: solid 4px black;
+  height: 200px;
+  max-width: 400px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 10px;
 }
