@@ -1,6 +1,8 @@
 /*======================================================================*/
 /* General */
 /*======================================================================*/
+
+/* Hide Scrollbar -----------------------------------------------------*/
 html {
   overflow: scroll;
   overflow-x: hidden;
@@ -13,16 +15,13 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #FF0000;
 }
-
-/* background: rgb(143, 6, 5); */
-
+/*----------------------------------------------------------------------*/
 
 * {
   /* box-sizing: border-box; */
   color: lightgray;
   /* border: solid 1px red; */
 }
-
 body {
   font-family: 'Chivo', sans-serif;
   font-weight: 300;
@@ -35,33 +34,22 @@ body {
   font-style: italic;
 } */
 
-/* Text */
-#intro-title {
-  padding-top: .5%;
-  font-size: 45px;
-  text-decoration: underline;
-}
-#intro-content {
-  padding-top: .5%;
-  font-size: 17px;
-}
+
+
 
 /*======================================================================*/
 /* Navbar */
 /*======================================================================*/
 #navbar {
   width: 100%;
-  /* position: fixed; */
   font-size: 19px;
   padding: 0 100px !important;
   font-weight: bold;
-  color: black !important;
 }
 #nav-bg {
-  height: 10vh;
+  /* height: 10vh; */
   /* background-image: linear-gradient( lightgray, rgba(0,0,0,0)); */
   width: 100%;
-  /* position: fixed; */
 }
 
 #logo {
@@ -71,6 +59,7 @@ body {
 
 .nav-link {
   padding: 0;
+  display: inline;
 }
 
 nav .nav-title{
@@ -105,27 +94,46 @@ nav div ul li a:hover {
   position: relative;
 }
 
-.bottom_aligner {
-  padding-bottom: 45vh;
+.intro-bg {
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient( rgba(0, 0, 0, 0) , rgba(0,0,0,1));
 }
 
 #intro {
-  min-height: 70vh;
-  padding: 10px 100px 10px;
-  word-wrap: break-word;
+  max-height: 40vh;
+  padding: 10px 100px;
   position: absolute;
   bottom: 0;
-  background-image: linear-gradient( rgba(0,0,0,0), rgba(0,0,0,1));
+}
 
+#intro-title {
+  padding-top: .5%;
+  font-size: 45px;
+  text-decoration: underline;
+}
+#intro-content {
+  padding-top: .5%;
+  font-size: 17px;
 }
 
 /*======================================================================*/
 /* Gallery */
 /*======================================================================*/
+#gallery-title {
+  color: black;
+  padding: 10px 0;
+  font-size: 45px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .container {
   background: lightgrey;
   border: solid 4px black;
-  /* margin-top: 30px; */
+  margin-top: 30px;
   margin-bottom: 30px;
   
 }
