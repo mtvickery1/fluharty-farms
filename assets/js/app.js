@@ -5,8 +5,8 @@ $(document).ready(function () {
   //======================================================================
   $('#main-background').chocolate({
     images: ['assets/images/drone/DJI_0181.JPG', 'assets/images/drone/DJI_0180.JPG'],
-    interval: 4000,
-    speed: 1000
+    interval: 5000,
+    speed: 2500
   });
 
   //======================================================================
@@ -26,11 +26,13 @@ $(document).ready(function () {
     }
     // create column
     var column = $("<div>").addClass("col-md-4")
+    column.addClass("text-center");
 
     // create frame
-    var frame = $("<div>").addClass("frame")
+    var frame = $("<img>")
+    frame.addClass("frame")
     // assign url to frame
-    $(frame).css('background-image', 'url(" ./assets/images/mls/' + i + '_Fluharty Farms - 1st Session.jpg ")');
+    $(frame).attr("src", "./assets/images/mls/" + i + "_Fluharty Farms - 1st Session.jpg");
     // var imageUrl = "./assets/images/mls/" + i + "_Fluharty Farms - 1st Session.jpg"
 
     // create link
