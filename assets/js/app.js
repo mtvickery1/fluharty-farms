@@ -48,9 +48,14 @@ $(document).ready(function () {
     // appending row to #photos
     gallery.append(a);
     // ------------------------------------------------------------------
-
-
-
   };
+
+  // Navbar height
+  var nvh = $('#navbar').height();
+  console.log('nvh:', nvh)
+
+
+
+
 
 });

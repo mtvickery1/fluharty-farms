@@ -8,6 +8,7 @@ nav .nav-title{
 nav {
   /* background-image: linear-gradient(black, rgba(0,0,0,0)); */
   background-color: black;
+  /* height: 10vh; */
   /* border-bottom: solid 10px black; */
 }
 nav div ul li a:hover {
@@ -24,11 +25,11 @@ nav div ul li a:hover {
 #gallery {
   /* background: rgb(143, 6, 5); */
   /* border: solid 4px black; */
-  margin-top: 30px;
-  margin-bottom: 30px;
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
   padding-top: 30px;
-  max-width: 80vw;
-  margin: 0 auto;
+  /* max-width: 80vw; */
+  /* margin: 0 auto; */
 }
 
 .frame {
@@ -36,6 +37,11 @@ nav div ul li a:hover {
   object-fit: cover;
   width: 300px;
   height: 200px;
+  /* display: block; */
+  /* max-width:300px;
+  max-height:200px;
+  width: auto;
+  height: auto; */
   margin: 0 10px 20px;
   transition: 1s;
   /* min-width: 150px; */
@@ -44,4 +50,16 @@ nav div ul li a:hover {
 .frame:hover {
   filter: grayscale(100%);
   transform: scale(1.1);
+}
+
+/* #gallery {
+  border: 2px blue solid;
+} */
+
+#land-album img {
+  /* overflow: auto; */
+  object-fit: cover;
+  max-width: 50vw;
+  height: 90vh;
+  float: left;
 }

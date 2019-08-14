@@ -20,6 +20,7 @@ html {
 * {
   /* box-sizing: border-box; */
   color: lightgray;
+  /* margin: 0 auto; */
   /* border: solid 1px red; */
 }
 body {
@@ -34,18 +35,15 @@ body {
 #navbar {
   width: 100%;
   font-size: 19px;
-  padding: 0 100px !important;
+  /* padding: 0 100px !important; */
   font-weight: bold;
-}
-#nav-bg {
-  /* height: 10vh; */
-  /* background-image: linear-gradient( lightgray, rgba(0,0,0,0)); */
-  width: 100%;
 }
 
 #logo {
   opacity: .8;
   padding-right: 10px;
+  height: 100px;
+  width: auto;
 }
 
 .nav-link {
@@ -82,24 +80,21 @@ nav div ul li a:hover {
   width: 100%;
   height: 100vh;
   background-position: 50% 80%;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.intro-bg {
-  height: 50vh;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background-image: linear-gradient( rgba(0, 0, 0, 0) , rgba(0,0,0,1));
-}
 
 #intro {
-  max-height: 40vh;
-  padding: 10px 100px;
+  max-height: 50vh;
+  /* padding: 10px 100px; */
   position: absolute;
   bottom: 0;
+  left: 0;
+  background-image: linear-gradient( rgba(0, 0, 0, 0) , rgba(0,0,0,1));
+  width: 100%;
+  margin: 0 auto;
 }
 
 #intro-title {
@@ -110,4 +105,31 @@ nav div ul li a:hover {
 #intro-content {
   padding-top: .5%;
   font-size: 17px;
+}
+
+#intro-center {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1199px) {
+  #intro-center {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #intro-center {
+    width: 720px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #intro-center {
+    width: 540px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #logo {
+    height: 50px;
+    width: auto;
+  }
 }
