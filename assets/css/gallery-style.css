@@ -1,3 +1,47 @@
+body {
+  background: rgb(143, 6, 5);
+}
+
 nav .nav-title{
   color: white;
+}
+nav {
+  /* background-image: linear-gradient(black, rgba(0,0,0,0)); */
+  background-color: black;
+  /* border-bottom: solid 10px black; */
+}
+nav div ul li a:hover {
+  border-bottom: 3px solid rgb(143, 6, 5);
+}
+.active {
+  border-bottom: 3px solid rgb(143, 6, 5);
+}
+
+/*======================================================================*/
+/* Gallery */
+/*======================================================================*/
+
+#gallery {
+  /* background: rgb(143, 6, 5); */
+  /* border: solid 4px black; */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.frame {
+  border: solid 4px black;
+  object-fit: cover;
+  width: 300px;
+  height: 200px;
+  margin: 0 10px 20px;
+  transition: 1s;
+  /* min-width: 150px; */
+}
+
+.frame:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
 }
