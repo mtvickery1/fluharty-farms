@@ -12,7 +12,7 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     var currentScrollTop = $(window).scrollTop();
-    $('.container-fluid').css('opacity', currentScrollTop / $('.container-fluid').height());
+    $('#darken').css('opacity', currentScrollTop / $('#darken').height());
 
   });
 
