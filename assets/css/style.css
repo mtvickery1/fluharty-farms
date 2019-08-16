@@ -18,7 +18,7 @@ html {
 /*----------------------------------------------------------------------*/
 
 * {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   color: lightgray;
   /* margin: 0 auto; */
   /* border: solid 1px red; */
@@ -26,7 +26,12 @@ html {
 body {
   font-family: 'Chivo', sans-serif;
   font-weight: 300;
-  background: black;
+  /* background: black; */
+  /* background-image: url("../images/01-fluarty-farms_orig.jpg"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
 }
 
 /*======================================================================*/
@@ -37,6 +42,7 @@ body {
   font-size: 19px;
   /* padding: 0 100px !important; */
   font-weight: bold;
+  height: 13vh !important;
 }
 
 #logo {
@@ -83,47 +89,74 @@ nav div ul li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+#circle-down-container {
+  height: 9vh;
+}
+.fa-chevron-circle-down {
+  position: relative;
+}
+
+#push-to-bottom {
+  height: 78vh;
 }
 
 
-#intro {
-  max-height: 50vh;
+.container-fluid {
+  background: rgb(0, 0, 0, .6);
+  backdrop-filter: blur(10px);
+}
+
+.intro {
+  height: 100vh;
   /* padding: 10px 100px; */
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  left: 0;
-  background-image: linear-gradient( rgba(0, 0, 0, 0) , rgba(0,0,0,1));
+  left: 0; */
+  /* background-image: linear-gradient( rgba(0, 0, 0, 0) , rgb(0,0,0)); */
   width: 100%;
   margin: 0 auto;
+
+  position: relative;
+  
+}
+
+.intro-section {
+  width: 1140px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
 }
 
 #intro-title {
   padding-top: .5%;
-  font-size: 45px;
+  font-size: 55px;
   text-decoration: underline;
 }
 #intro-content {
   padding-top: .5%;
-  font-size: 17px;
-}
-
-#intro-center {
-  width: 1140px;
-  margin: 0 auto;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 1199px) {
-  #intro-center {
+  #intro-section {
     width: 960px;
   }
 }
 @media screen and (max-width: 991px) {
-  #intro-center {
+  #intro-section {
     width: 720px;
   }
 }
 @media screen and (max-width: 767px) {
-  #intro-center {
+  #intro-section {
     width: 540px;
   }
 }

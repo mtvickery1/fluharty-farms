@@ -3,11 +3,37 @@ $(document).ready(function () {
   //======================================================================
   // Chocolate.js
   //======================================================================
-  $('#main-background').chocolate({
-    images: ['assets/images/drone/DJI_0181.JPG', 'assets/images/drone/DJI_0180.JPG'],
-    interval: 5000,
-    speed: 2500
+  // $('body').chocolate({
+  //   images: ['assets/images/drone/DJI_0181.JPG', 'assets/images/drone/DJI_0180.JPG'],
+  //   interval: 5000,
+  //   speed: 2500
+  // });
+  $('body').css("background-image", "url('assets/images/drone/DJI_0181.JPG')");
+
+  $(window).scroll(function () {
+    var currentScrollTop = $(window).scrollTop();
+    $('.container-fluid').css('opacity', currentScrollTop / $('.container-fluid').height());
+
   });
+
+  //======================================================================
+  // Landing Page Height
+  //======================================================================
+  // Set height on load
+  // vph = $(window).height();
+  // nvh = $('#navbar').height();
+  // $('#push-to-bottom').css({ 'height': vph - nvh + 'px' });
+  // console.log('vph', vph);
+  // console.log('nvh', nvh);
+
+  // $(window).resize(function () {
+  //   vph = $(window).height();
+  //   nvh = $('#navbar').height();
+  //   $('#push-to-bottom').css({ 'height': vph - nvh + 'px' });
+  //   console.log('vph', vph);
+  //   console.log('nvh', nvh);
+  // });
+
 
   //======================================================================
   // Render Photos
@@ -35,7 +61,7 @@ $(document).ready(function () {
     a.attr("target", "_blank");
 
     a.attr("data-lightbox", "mygallery");
-  
+
 
     // ------------------------------------------------------------------
     // Append
@@ -49,10 +75,6 @@ $(document).ready(function () {
     gallery.append(a);
     // ------------------------------------------------------------------
   };
-
-  // Navbar height
-  var nvh = $('#navbar').height();
-  console.log('nvh:', nvh)
 
 
 
