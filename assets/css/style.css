@@ -42,7 +42,7 @@ body {
   font-size: 19px;
   /* padding: 0 100px !important; */
   font-weight: bold;
-  height: 13vh !important;
+  /* min-height: 13vh; */
 }
 
 #logo {
@@ -54,6 +54,7 @@ body {
 
 .nav-link {
   padding: 0;
+  /* closer bottom border */
   display: inline;
 }
 
@@ -64,10 +65,10 @@ nav .nav-title{
   text-decoration: none;
   /* border-bottom: 3px solid rgb(0,0,0,0); */
 }
-nav .nav-title:hover {
-  /* text-decoration: none;
-  border-bottom: 3px solid rgb(143, 6, 5); */
-}
+/* nav .nav-title:hover {
+  text-decoration: none;
+  border-bottom: 3px solid rgb(143, 6, 5);
+} */
 
 /* nav div ul li a {
   border-bottom: 3px solid rgb(0,0,0,0);;
@@ -106,8 +107,9 @@ nav div ul li a:hover {
 
 
 #darken {
-  background: rgb(0, 0, 0, .6);
-  backdrop-filter: blur(10px);
+  background: rgb(128, 128, 128, .6);
+  backdrop-filter: blur(2px);
+  width: 100%;
 }
 
 .intro {

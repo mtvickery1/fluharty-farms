@@ -8,8 +8,11 @@ $(document).ready(function () {
   //   interval: 5000,
   //   speed: 2500
   // });
+
+  // Landing Background
   $('body').css("background-image", "url('assets/images/drone/DJI_0181.JPG')");
 
+  // About Background
   $(window).scroll(function () {
     var currentScrollTop = $(window).scrollTop();
     $('#darken').css('opacity', currentScrollTop / $('#darken').height());
@@ -45,13 +48,12 @@ $(document).ready(function () {
     // ------------------------------------------------------------------
     // Create
     // ------------------------------------------------------------------
-
     // create frame
     var frame = $("<img>");
+    // add .frame 
     frame.addClass("frame");
     // assign url to frame
     $(frame).attr("src", "./assets/images/mls/" + i + "_Fluharty Farms - 1st Session.jpg");
-    // var imageUrl = "./assets/images/mls/" + i + "_Fluharty Farms - 1st Session.jpg"
 
     // create link
     var a = $("<a>");
@@ -59,18 +61,14 @@ $(document).ready(function () {
     a.attr("href", "./assets/images/mls/" + i + "_Fluharty Farms - 1st Session.jpg");
     // open link in new tab
     a.attr("target", "_blank");
-
+    // add lightbox attr
     a.attr("data-lightbox", "mygallery");
-
 
     // ------------------------------------------------------------------
     // Append
     // ------------------------------------------------------------------
     // append frame to link
     a.append(frame);
-
-
-
     // appending row to #photos
     gallery.append(a);
     // ------------------------------------------------------------------
