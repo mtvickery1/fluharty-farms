@@ -15,7 +15,7 @@ $(document).ready(function () {
   // About Background
   $(window).scroll(function () {
     var currentScrollTop = $(window).scrollTop();
-    $('#darken').css('opacity', currentScrollTop / $('#darken').height());
+    $('#about-section').css('opacity', currentScrollTop / $('#about-section').height());
 
   });
 

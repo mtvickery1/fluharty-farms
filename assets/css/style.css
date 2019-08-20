@@ -23,6 +23,7 @@ html {
   /* margin: 0 auto; */
   /* border: solid 1px red; */
 }
+
 body {
   font-family: 'Chivo', sans-serif;
   font-weight: 300;
@@ -48,7 +49,7 @@ body {
 #logo {
   opacity: .8;
   padding-right: 10px;
-  height: 100px;
+  height: 50px;
   width: auto;
 }
 
@@ -83,71 +84,46 @@ nav div ul li a:hover {
 /*======================================================================*/
 /* Landing */
 /*======================================================================*/
-#main-background {
-  width: 100%;
+#top {
   height: 100vh;
-  background-position: 50% 80%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-  background-attachment: fixed;
 }
 
 #circle-down-container {
-  height: 9vh;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
 }
-.fa-chevron-circle-down {
-  position: relative;
+#circle-down-container i {
+  color:lightgray;
+  opacity: .8;
 }
 
-#push-to-bottom {
-  height: 78vh;
-}
-
-
-#darken {
-  background: rgb(128, 128, 128, .6);
+/*======================================================================*/
+/* About */
+/*======================================================================*/
+#about-section {
+  background: rgba(87, 87, 87, 0.6);
   backdrop-filter: blur(2px);
-  width: 100%;
-}
-
-.intro {
-  height: 100vh;
-  /* padding: 10px 100px; */
-  /* position: absolute;
-  bottom: 0;
-  left: 0; */
-  /* background-image: linear-gradient( rgba(0, 0, 0, 0) , rgb(0,0,0)); */
-  width: 100%;
-  margin: 0 auto;
-
+  min-height: 100vh;
   position: relative;
-  
+  overflow: auto;
 }
 
-.intro-section {
-  width: 1140px;
-  margin: 0 auto;
+#intro {
   position: absolute;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
+  margin: auto;
 }
 
-#intro-title {
-  padding-top: .5%;
-  font-size: 55px;
-  text-decoration: underline;
-}
-#intro-content {
-  padding-top: .5%;
-  font-size: 25px;
-}
 
-@media screen and (max-width: 1199px) {
+
+/*======================================================================*/
+/* Media Queries */
+/*======================================================================*/
+/* @media screen and (max-width: 1199px) {
   #intro-section {
     width: 960px;
   }
@@ -167,4 +143,4 @@ nav div ul li a:hover {
     height: 50px;
     width: auto;
   }
-}
+} */
