@@ -13,11 +13,11 @@ $(document).ready(function () {
   $('body').css("background-image", "url('assets/images/drone/DJI_0181.JPG')");
 
   // About Background
-  // $(window).scroll(function () {
-  //   var currentScrollTop = $(window).scrollTop();
-  //   $('#about-section').css('opacity', currentScrollTop / $('#about-section').height());
+  $(window).scroll(function () {
+    var currentScrollTop = $(window).scrollTop();
+    $('#about-section').css('opacity', currentScrollTop / $('#about-section').height());
 
-  // });
+  });
 
   //======================================================================
   // Landing Page Height
