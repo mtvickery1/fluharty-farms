@@ -6,6 +6,7 @@
 html {
   overflow: scroll;
   overflow-x: hidden;
+  /* scroll-behavior: smooth; */
 }
 ::-webkit-scrollbar {
   width: 0px;  /* Remove scrollbar space */
@@ -88,15 +89,16 @@ nav div ul li a:hover {
   height: 100vh;
 }
 
-#circle-down-container {
+#circle-down-container, #circle-up-container {
   position: absolute;
   bottom: 10px;
   left: 0;
   right: 0;
 }
-#circle-down-container i {
+#circle-down-container i, #circle-up-container i {
   color:lightgray;
   opacity: .8;
+  cursor: pointer;
 }
 
 /*======================================================================*/
