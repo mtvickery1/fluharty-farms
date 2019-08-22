@@ -10,7 +10,8 @@ $(document).ready(function () {
   // });
 
   // Landing Background
-  $('body').css("background-image", "url('assets/images/drone/DJI_0181.JPG')");
+  // $('body').css("background-image", "url('assets/images/drone/DJI_0181.JPG')");
+  // $('body').css("background-image", "url('assets/images/gold/dji_0524.jpg')");
 
   // About Background
   $(window).scroll(function () {

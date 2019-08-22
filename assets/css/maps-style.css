@@ -1,0 +1,44 @@
+body {
+  background-image: url("../../assets/background/vintage-concrete/vintage-concrete.png");
+  
+}
+
+nav .nav-title{
+  color: white;
+}
+nav {
+  /* background-image: linear-gradient(black, rgba(0,0,0,0)); */
+  /* background-color: black; */
+  /* height: 10vh; */
+  /* border-bottom: solid 10px black; */
+}
+nav div ul li a:hover {
+  border-bottom: 3px solid rgb(143, 6, 5);
+}
+.active {
+  border-bottom: 3px solid rgb(143, 6, 5);
+}
+
+/*======================================================================*/
+/* Map */
+/*======================================================================*/
+
+#map {
+  line-height: 0;
+  padding: 0 10px 10px;
+  min-height: 80vh;
+}
+#map iframe {
+  padding: 0 ;
+  border: black 4px solid;
+  min-height: 90vh;
+}
+
+
+
+/*======================================================================*/
+/* Media Queries */
+/*======================================================================*/
+/* @media (min-width: 768px) { 
+
+} */
