@@ -1,6 +1,6 @@
 body {
   background-image: url("../../assets/background/vintage-concrete/vintage-concrete.png");
-  
+  /* padding-top: 66px; */
 }
 
 nav .nav-title{
@@ -8,7 +8,7 @@ nav .nav-title{
 }
 nav {
   /* background-image: linear-gradient(black, rgba(0,0,0,0)); */
-  /* background-color: black; */
+  background-color: black;
   /* height: 10vh; */
   /* border-bottom: solid 10px black; */
 }
@@ -22,16 +22,10 @@ nav div ul li a:hover {
 /*======================================================================*/
 /* Gallery */
 /*======================================================================*/
+#album-container {
+  padding-top: 10px
+}
 
-#map {
-  line-height: 0;
-  padding: 0 10px 10px;
-}
-#map iframe {
-  padding: 0 ;
-  border: black 4px solid;
- 
-}
 #album-container .row {
   /* margin: 0 auto !important;
   padding: 0 auto; */
@@ -92,4 +86,8 @@ nav div ul li a:hover {
   #facilities, #home {
     padding-bottom: 10px;
   }
+
+  /* body {
+    padding-top: 91px;
+  } */
 }

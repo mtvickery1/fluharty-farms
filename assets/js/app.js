@@ -18,6 +18,9 @@ $(document).ready(function () {
     var currentScrollTop = $(window).scrollTop();
     $('#about-section').css('opacity', currentScrollTop / $('#about-section').height());
 
+
+    
+    // console.log('currentScrollTop:', currentScrollTop)
   });
 
   //======================================================================
@@ -44,6 +47,12 @@ $(document).ready(function () {
   //======================================================================
   var fromTop = 0;
   // Main
+  $("#nav-home").click(function () {
+    fromTop = 0;
+    $('html,body').animate({
+      scrollTop: $("body").offset().top - fromTop
+    }, 'slow');
+  });
   $("#nav-about").click(function () {
     fromTop = 0;
     $('html,body').animate({

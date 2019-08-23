@@ -43,6 +43,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  /* padding-top: 66px */
   
 }
 
@@ -74,7 +75,7 @@ body {
 }
 
 nav .nav-title{
-  font-size: 22px;
+  font-size: 15px;
   color: white;
   text-shadow: -2px 2px black;
   text-decoration: none;
@@ -125,6 +126,10 @@ nav div ul li a:hover {
   overflow: auto;
 }
 
+#intro-section {
+  font-size: 14px;
+}
+
 #intro {
   position: absolute;
   top: 50%;
@@ -132,6 +137,44 @@ nav div ul li a:hover {
   transform: translate(-50%, -50%);
   margin: auto;
 }
+
+/*======================================================================*/
+/* Media Queries */
+/*======================================================================*/
+@media (min-width: 576px) { 
+  #logo {
+    height: 75px;
+  }
+  /* body {
+    padding-top: 91px;
+  } */
+  nav .nav-title {
+    font-size: 22px
+  }
+  #intro-section {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) { 
+  #intro-section {
+    font-size: 20px;
+  }
+ }
+
+
+@media (min-width: 992px) { 
+  #intro-section {
+    font-size: 22px;
+  }
+ }
+
+
+@media (min-width: 1200px) { 
+  #intro-section {
+    font-size: 24px;
+  }
+ }
 
 
 
