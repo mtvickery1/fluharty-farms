@@ -13,6 +13,17 @@ $(document).ready(function () {
   // $('body').css("background-image", "url('assets/images/drone/DJI_0181.JPG')");
   // $('body').css("background-image", "url('assets/images/gold/dji_0524.jpg')");
 
+  var navbarHeight = $("#navbar").outerHeight();
+  console.log('navbarHeight:', navbarHeight)
+
+  var albumContainer = $("#album-container").outerHeight();
+  console.log('albumContainer:', albumContainer)
+
+  var albumsHeight = albumContainer - navbarHeight;
+  console.log('albumsHeight:', albumsHeight)
+
+  $("#album-container").height(albumsHeight);
+
   // About Background
   $(window).scroll(function () {
     var currentScrollTop = $(window).scrollTop();

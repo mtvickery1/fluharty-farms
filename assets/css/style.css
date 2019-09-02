@@ -19,7 +19,7 @@ html {
 /*----------------------------------------------------------------------*/
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   color: lightgray;
   /* margin: 0 auto; */
   /* border: solid 1px red; */

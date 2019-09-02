@@ -1,5 +1,6 @@
 body {
-  background-image: url("../../assets/background/vintage-concrete/vintage-concrete.png");
+  background: url("../../assets/background/vintage-concrete/vintage-concrete.png");
+  /* background-repeat: repeat; */
   /* padding-top: 66px; */
 }
 
@@ -11,6 +12,7 @@ nav {
   background-color: black;
   /* height: 10vh; */
   /* border-bottom: solid 10px black; */
+  margin-bottom: 10px;
 }
 nav div ul li a:hover {
   border-bottom: 3px solid rgb(143, 6, 5);
@@ -22,28 +24,56 @@ nav div ul li a:hover {
 /*======================================================================*/
 /* Gallery */
 /*======================================================================*/
-#album-container {
-  padding-top: 10px
+#home, #land {
+  margin: 0 5px 0 10px;
+}
+#facilities, #water {
+  margin: 0 10px 0 5px;
+} 
+#facilities, #home {
+  margin-bottom: 10px;
 }
 
-#album-container .row {
-  /* margin: 0 auto !important;
-  padding: 0 auto; */
+#album-container {
+  height: 100vh;
+  /* border: purple 5px solid; */
+  padding: 0;
 }
-#home, #water {
-  padding: 0 10px 10px;
+
+#home {
+  background-image: url("../../assets/images/patio/75_Fluharty Farms - 1st Session.jpg");
 }
-#land, #facilities {
-  padding: 0 10px 10px;
+#facilities {
+  background-image: url("../../assets/images/gold/img_2011.jpg");
 }
-.album-img {
+#land {
+  background-image: url("../../assets/images/gold/img_2468.jpg");
+}
+#water {
+  background-image: url("../../assets/images/gold/dji_0524.jpg");
+}
+
+.album {
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(50% - 15px); 
+  width: calc(50% - 15px); 
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  float: left;
+  border: solid 4px black;
+}
+
+/* .album-img {
   border: black solid 3px;
   object-fit: cover;
   width: 100%;
-  height: 45vh;
-  
-}
-
+  height: 100%;
+  width: 100%;
+} */
 
 #gallery {
   /* background: rgb(143, 6, 5); */
@@ -76,7 +106,7 @@ nav div ul li a:hover {
 /*======================================================================*/
 /* Media Queries */
 /*======================================================================*/
-@media (min-width: 768px) { 
+/* @media (min-width: 768px) { 
   #home, #land {
     padding: 0 5px 0 10px;
   }
@@ -87,7 +117,7 @@ nav div ul li a:hover {
     padding-bottom: 10px;
   }
 
-  /* body {
+  body {
     padding-top: 91px;
-  } */
-}
+  }
+} */
